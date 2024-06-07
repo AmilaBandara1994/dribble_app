@@ -7,6 +7,34 @@
   :root {
     --color-primary: rgb(255 115 179);
     --color-secondary: rgb(111 114 185);
+  
     /* ... */
   }
+}
+.react-multi-carousel-item{
+  margin: 0 10px;
+}
+.change_color{
+  animation: changecolor 20s ease-in-out infinite;
+}
+@keyframes changecolor {
+    0% { 
+      background-color: #e7e5e4 
+    }
+    20% { 
+      background-color: #fecaca 
+    }
+    40% { 
+      background-color:  #fed7aa
+    }
+    60% { 
+      background-color:#fde68a 
+    }
+    80% { 
+      background-color: #fef08a 
+    }
+    100% { 
+      background-color: #d9f99d 
+    }
+  
 }

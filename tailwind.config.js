@@ -7,17 +7,19 @@ export default {
   theme: {
     extend: {
       fontFamily:{
-        sans: ['Mona Sans', 'Helvetica Neue', 'Helvetica', 'Arial','sans-serif']
+        sans: ['sans-serif'],
+        arial: ['Arial',],
+        neue: ['Helvetica Neue', ],
+        helvetica: [ 'Helvetica',],
+        mono: ['Mona Sans',],
       },
       gridTemplateColumns: {
         '70/30':'70% 28%',
       },
-    },
-    colors: {
-      transparent: 'transparent',
-      current: 'currentColor',
-      'white': '#ffffff',
-      'bg-amb': '#f8f7f4',
+      colors: {
+        primary: "#243343",
+      },
+    
       
     },
   },
