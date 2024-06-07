@@ -19,6 +19,8 @@ export default {
       colors: {
         primary: "#243343",
       },
+    
+      
     },
   },
 
