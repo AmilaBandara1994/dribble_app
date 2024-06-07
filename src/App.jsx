@@ -4,8 +4,7 @@ import Hero from './components/Hero'
 const App = () => {
   return (
     <>
-      <Hero />
-      
+      <Hero />      
     </>
   )
 }
