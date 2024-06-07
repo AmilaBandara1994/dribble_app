@@ -10,6 +10,7 @@ This template provides a minimal setup to get React working in Vite with HMR and
 
 ## installation 
  use npm package manager to install all the dependencies.
+ ***checkout to the `develop` branch and run the following command***
  `npm install`
 
 ## to run the project 
