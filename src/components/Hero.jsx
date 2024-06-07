@@ -29,24 +29,24 @@ const Hero = () => {
     fetchHeroData();
   },[]);
   return (
-    <section className="my-5 flex flex-col items-center justify-center">
+    <section className="my-5">
+      <div className=" flex flex-col items-center justify-center">
+          <div className="flex items-center justify-center text-center w-8/12">
+              <div className="flex flex-col items-center justify-center ">
+                  <div className="bg-orange-300 rounded-full  px-4 py-2" >
+                      <a href="#" className='text-lg font-mono font-semibold' >
+                          Over 3 million ready-to-work creatives!
+                      </a>
+                  </div>
+                  <h1 className='text-7xl font-serif  my-10 '>The world’s destination for design</h1>
+                  <h3 className="text-xl"> Get inspired by the work of millions of top-rated designers & agencies around the world.</h3>
+              </div>
+          </div>
+          <button className='bg-black text-lg text-white px-6 py-4 m-4 rounded-full'>Get Started</button>
+      </div>
  
-        <div className="flex items-center justify-center text-center w-8/12">
-            <div className="flex flex-col items-center justify-center ">
-                <div className="bg-orange-300 rounded-full  px-4 py-2" >
-                    <a href="#" className='text-base font-mono font-semibold' >
-                        Over 3 million ready-to-work creatives!
-                    </a>
-                </div>
-                <h1 className='text-7xl font-serif  my-10 '>The world’s destination for design</h1>
-                <h3 className="text-xl"> Get inspired by the work of millions of top-rated designers & agencies around the world.</h3>
-            </div>
-        </div>
-        <button className='bg-black text-lg text-white px-6 py-4 m-4 rounded-full'>Get Started</button>
-        <div className=" ">
-          
-              <HeroMarquee heroMarque={heroMarqu} />
-          
+        <div className="">          
+              <HeroMarquee heroMarque={heroMarqu} />          
         </div>
     </section>
   )
