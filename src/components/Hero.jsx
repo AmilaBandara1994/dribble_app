@@ -5,37 +5,22 @@ const Hero = () => {
   const [heroMarqu, setHeroMarqu]  = useState([]);
   const [loading, setLoading] = useState(true);
 
-  let bgcolors =['#bbf7d0','#d9f99d','#fcd34d','#fef08a','#fca5a5', ];
-  let colorIndex= 0;
-  let bgcolor='';
-
-  
-  // const  changecolor  = ()=>{
-  //   bgcolor = bgcolors[colorIndex];
-  //   if(colorIndex === bgcolors.length-1) colorIndex =0;  
-  //   console.log(bgcolor);  
-  //   colorIndex++;
-
-  //   setTimeout(changecolor(), 3000);
-  // }
-  // changecolor();
-
 
 
   useEffect(() =>{
     const fetchHeroData = async () => {
       try {
         setHeroMarqu([
-          {id: 1, name:'chris owens',position:'product designer', image:'mercedes-bazan.webp', tags:['UX', 'web', 'product']},
-          {id: 2, name:'dan mole',position:'digital designer', image:'Vladimir_Gruev.webp', tags:['brand', 'design', 'product']},
-          {id: 3, name:'daniele buffa',position:'illustrator', image:'chris_ownes.webp', tags:['mobile', 'web', 'web']},
-          {id: 4, name:'helen tran',position:'lead product designer', image:'ellif.webp', tags:['web', 'mobile', 'UX']},
-          {id: 5, name:'victa whille',position:'creative designer', image:'chris_ownes.webp', tags:['mobile', 'web', 'UI']},
-          {id: 6, name:'mercedes bazan',position:'brand designer', image:'Vladimir_Gruev.webp', tags:['illustration', 'brand', 'product']},
-          {id: 7, name:'jessse showalter',position:'design director', image:'austia.webp', tags:['graphic design', 'web']},
-          {id: 8, name:'elif kamesogulu',position:'brand + illustrator', image:'ellif.webp', tags:['leadership', 'product', 'UX']},
-          {id: 9, name:'aurelien salomon',position:'design educator', image:'Andrea.webp', tags:['design', 'web', 'product']},
-          {id: 10, name:'lilla bardenova',position:'lead illustrator', image:'chris_ownes.webp', tags:['mobile', 'web', 'UX']},
+          {id: 1, name:'chris owens',position:'product designer', video:'', image:'mercedes-bazan.webp', tags:['UX', 'web', 'product']},
+          {id: 2, name:'dan mole',position:'digital designer', video:'', image:'Vladimir_Gruev.webp', tags:['brand', 'design', 'product']},
+          {id: 3, name:'daniele buffa',position:'illustrator', video:'https://cdn.dribbble.com/uploads/47181/original/1e3a73a174484bef522b620c401cd00a.mp4?1685645427', image:'', tags:['mobile', 'web', 'web']},
+          {id: 4, name:'helen tran',position:'lead product designer', video:'', image:'ellif.webp', tags:['web', 'mobile', 'UX']},
+          {id: 5, name:'victa whille',position:'creative designer', video:'https://cdn.dribbble.com/uploads/47179/original/35d07cfebd303e05e688078015da0cc2.mp4?1685645373', image:'chris_ownes.webp', tags:['mobile', 'web', 'UI']},
+          {id: 6, name:'mercedes bazan',position:'brand designer', video:'', image:'Vladimir_Gruev.webp', tags:['illustration', 'brand', 'product']},
+          {id: 7, name:'jessse showalter',position:'design director', video:'', image:'austia.webp', tags:['graphic design', 'web']},
+          {id: 8, name:'elif kamesogulu',position:'brand + illustrator', video:'', image:'ellif.webp', tags:['leadership', 'product', 'UX']},
+          {id: 9, name:'aurelien salomon',position:'design educator', video:'https://cdn.dribbble.com/uploads/47180/original/1def7b9fb30832c4af4353b325d9c3af.mp4?1685645402', image:'Andrea.webp', tags:['design', 'web', 'product']},
+          {id: 10, name:'lilla bardenova',position:'lead illustrator', video:'', image:'chris_ownes.webp', tags:['mobile', 'web', 'UX']},
         ]);     
       } catch (error) {
         console.log('Error fetching data ', error);
