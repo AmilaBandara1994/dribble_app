@@ -6,7 +6,7 @@ const HeroMarqueeItem = ({name="John Deo", position="UX/UI Designer" , img='',
   const fetchedUrl = `url(/src/assets/images/${img})` ;
   return (
     <>
-      <div  className="rounded-3xl slide w-[273px] h-[340px]"
+      <div  className="rounded-3xl slide w-[17rem] h-[21rem]"
       style={{
         backgroundImage: img !== '' ? fetchedUrl : '',
         backgroundPosition: 'center',

@@ -36,7 +36,7 @@ const Hero = () => {
           <div className="flex items-center justify-center text-center w-11/12 lg:w-8/12 md:w-10/12 ">
               <div className="flex flex-col items-center justify-center ">
                   <div className="change_color rounded-full  px-[16px] py-[10px]">
-                      <a href="#" className='text-lg font-mono font-semibold' >
+                      <a href="#" className='text-lg leading-[0] font-mono font-semibold' >
                           Over 3 million ready-to-work creatives!
                       </a>
                   </div>
