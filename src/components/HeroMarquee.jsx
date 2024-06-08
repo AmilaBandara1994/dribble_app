@@ -15,27 +15,31 @@ const HeroMarquee = ({heroMarque}) => {
     slidesToShow:4,
     slidesToScroll:1
   };
-  const responsive = {
+    const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 7
+      breakpoint: { max: 4000, min: 2800 },
+      items: 8
     },
     desktop: {
-      breakpoint: { max: 3000, min: 1448 },
+      breakpoint: { max: 2800, min: 1448 },
       items: 7
     },
+    laptopLg: {
+      breakpoint: { max: 1448, min: 1024 },
+      items: 4
+    },
     laptop: {
-      breakpoint: { max: 1448, min: 768 },
-      items: 5
+      breakpoint: { max: 1024, min: 768 },
+      items: 3
     },
     tablet: {
       breakpoint: { max: 768, min: 464 },
-      items: 3
+      items: 2
     },
     mobilelg:{
       breakpoint: { max: 464, min: 320 },
-      items: 2
+      items: 1
     },
     mobile: {
       breakpoint: { max: 320, min: 0 },
@@ -58,10 +62,10 @@ const HeroMarquee = ({heroMarque}) => {
       keyBoardControl={false}
       customTransition="5s"
       transitionDuration={3000}
-      removeArrowOnDeviceType={["tablet", "mobile","mobilelg","desktop", "laptop","superLargeDesktop"]}
+      removeArrowOnDeviceType={["tablet", "mobile","mobilelg","desktop", "laptop","laptopLg","superLargeDesktop"]}
       >
         {  heroMarque.map((hero)=>(
-            <HeroMarqueeItem key={hero.id} name={hero.name} position={hero.position} img={hero.image} tags={hero.tags}/> 
+            <HeroMarqueeItem key={hero.id} video={hero.video} name={hero.name} position={hero.position} img={hero.image} tags={hero.tags}/> 
           ))      
         }  
       </Carousel>
