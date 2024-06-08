@@ -38,3 +38,52 @@
     }
   
 }
+
+
+/* Slider */
+.slider{
+  margin: auto;
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.slider-track{
+  display: flex;
+  width: auto;
+  column-gap: 2rem;
+  animation-name: scrollLeft;
+  animation-delay: 0ms ;
+  animation-duration: 50s;
+  animation-fill-mode:both;
+  animation-iteration-count:infinite;
+  animation-timing-function: linear;
+}
+
+.slider::after,
+.slider::before{
+  height: 100%;
+  position: absolute;  
+}
+
+.slider::before{
+  left: 0;
+  top: 0;
+}
+.slider::after{
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+@keyframes scrollLeft {
+  0%{
+    transform: translateX(0);
+  }
+  
+  100%{
+    transform: translateX(-50%);
+  }
+}
+
